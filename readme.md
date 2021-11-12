@@ -1,17 +1,18 @@
 # cht
-**cht** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://github.com/tendermint/starport).
+**cht** is a blockchain built using Cosmos SDK and Tendermint Core.
 
 ## Get started
 
+To get started clone this repository.
 ```
+cd cht
 starport chain serve
 ```
 
 `serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
 ### Configure
-
-Your blockchain in development can be configured with `config.yml`. To learn more, see the [Starport docs](https://docs.starport.network).
+In the Developer Docs there will be clear instructions on how to configure your full node to the live network.
 
 ### Launch
 
@@ -20,6 +21,7 @@ To launch your blockchain live on multiple nodes, use `starport network` command
 ### Web Frontend
 
 Starport has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
+This allows a web socket for developers to connect to the blockchain
 
 ```
 cd vue
@@ -45,12 +47,3 @@ To install the latest version of your blockchain node's binary, execute the foll
 ```
 curl https://get.starport.network/ChronicToken/cht@latest! | sudo bash
 ```
-`ChronicToken/cht` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
-
-## Learn more
-
-- [Starport](https://github.com/tendermint/starport)
-- [Starport Docs](https://docs.starport.network)
-- [Cosmos SDK documentation](https://docs.cosmos.network)
-- [Cosmos SDK Tutorials](https://tutorials.cosmos.network)
-- [Discord](https://discord.gg/cosmosnetwork)
