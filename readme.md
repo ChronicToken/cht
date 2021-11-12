@@ -11,6 +11,8 @@ starport chain serve
 
 `serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
+Using the `starport chain serve` command is great for getting the chain started, but for running a node for long periods of time we will need to create a systemd process. This can be found in the developer documentation.
+
 ### Configure
 In the Developer Docs there will be clear instructions on how to configure your full node to the live network.
 
